@@ -29,6 +29,28 @@
   color: #2b5286;
 }
 
+.searchLabel {
+  padding: 10px;
+  margin: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  color: #0f3970;
+  border: solid;
+}
+
+.eachCard {
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgb(100, 12, 12);
+  color: white;
+  height: 450px;
+  box-shadow: 5px 5px 10px rgb(100, 5, 5);
+}
+
+.h1Class {
+  font-size: 17px;
+}
+
 img {
   width: 100%;
 }
@@ -44,9 +66,9 @@ img {
 .cardClass > h1 {
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   padding: 5px 10px;
-  color: rgb(185, 184, 184);
+  color: rgb(12, 12, 12);
   font-size: 1em;
-  background-color: rgb(250, 219, 214);
+  background-color: tomato;
 }
 
 p {
