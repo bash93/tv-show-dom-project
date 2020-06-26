@@ -14,36 +14,35 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="navbar bg-dark">
-        <div class="container d-flex">
-          <div class="navbar-brand d-flex">
-            <select class="select" name="episodesList" id="allEpisodes">
-              <option value="novalue">All episodes</option>
-            </select>
-          </div>
-          <span id="resultNumber"></span>
-          <input placeholder="your search item" type="text" id="search" />
-        </div>
-      </div>
-    </header>
-    <main role="main">
-      <div class="py-5 bg-light">
-        <div class="container">
-          <div id="root" class="row"></div>
-        </div>
-      </div>
-    </main>
-    <footer class="text-muted">
-      <div class="container">
-        <p>
-          TV shows data has originally come from
-          <a href="http://www.tvmaze.com">TVMaze.com</a>
-        </p>
-      </div>
-    </footer>
+    <div id="root" class="container">
+      <nav id="navTag" class="navClass row">
+        <select
+          id="selectTag1"
+          class="select xl-col-2 lg-col-2 md-col-3 sm-col-4 col-10"
+        ></select>
+        <select
+          id="selectTag2"
+          class="select xl-col-2 lg-col-2 md-col-3 sm-col-4 col-10"
+        ></select>
+        <input
+          id="inputTag"
+          placeholder="Search..."
+          type="text"
+          name="search"
+          class="inputClass xl-col-2 lg-col-2 md-col-3 sm-col-3 col-10"
+        />
+        <label
+          id="lableTag"
+          class="searchLabel xl-col-4 lg-col-5 md-col-6 sm-col-7 col-12"
+        ></label>
+      </nav>
+      <div id="optionCtn" class="row"></div>
+    </div>
+
+    <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
     <script src="shows.js"></script>
+
     <!-- Loads YOUR javascript code -->
     <script src="script.js"></script>
   </body>
