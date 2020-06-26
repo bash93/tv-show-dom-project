@@ -42,67 +42,24 @@ header {
   margin-bottom: 5px;
 }
 
-#resultNumber {
-  color: white;
+#image {
+  width: 100%;
 }
 
-.episodeNameCode {
-  color: white;
-  margin-right: 10px;
-  font-weight: 700;
-}
-.col-md-4 {
-  padding-bottom: 15px;
-}
-.name {
-  text-align: left;
-  margin-bottom: 2px;
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden !important;
-  text-overflow: ellipsis;
+#search-episodes {
+  margin-bottom: 20px;
 }
 
-@media (min-width: 576px) {
-  .name {
-    text-align: left;
-    margin-bottom: 2px;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden !important;
-    text-overflow: ellipsis;
+@media (min-width: 780px) {
+  #cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body {
+    margin: 10px 80px;
   }
 }
-
-@media (min-width: 768px) {
-  .name {
-    text-align: left;
-    margin-bottom: 2px;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden !important;
-    text-overflow: ellipsis;
-  }
-}
-
-@media (min-width: 992px) {
-  .name {
-    text-align: left;
-    margin-bottom: 2px;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden !important;
-    text-overflow: ellipsis;
-  }
-}
-
-@media (min-width: 1200px) {
-  .name {
-    text-align: left;
-    margin-bottom: 2px;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden !important;
-    text-overflow: ellipsis;
+@media (min-width: 980px) {
+  #cardContainer {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
