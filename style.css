@@ -1,3 +1,43 @@
-#root {
-  color: red;
+#search {
+  width: 22rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.select {
+  width: 22rem;
+  font-size: 1rem;
+}
+.name {
+  padding: 15px 0px 15px 0px;
+  border-radius: 5px;
+  margin: 2px 10px 10px 10px;
+  width: 100%;
+  text-align: center;
+  text-justify: auto;
+  font-weight: 700;
+}
+#title {
+  border: 1px solid #b4b7b8;
+  background-color: rgb(85, 90, 95);
+  color: white;
+}
+
+#resultNumber {
+  color: white;
+}
+
+#episodeNameCode {
+  color: white !important;
+  margin-right: 10px;
+  font-weight: 700;
+}
+.card {
+  height: 100%;
+}
+.col-md-4 {
+  padding-bottom: 15px;
 }
