@@ -4,6 +4,12 @@ body {
   margin: 5px 20px;
 }
 
+#cardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
+}
+
 #search {
   width: 22rem;
   padding: 0.25rem 0.75rem;
@@ -40,9 +46,6 @@ body {
   color: white;
   margin-right: 10px;
   font-weight: 700;
-}
-.card {
-  height: 100%;
 }
 .col-md-4 {
   padding-bottom: 15px;
