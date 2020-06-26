@@ -24,19 +24,22 @@ header {
   border: solid gray;
 }
 
-.name {
-  padding: 15px 0px 15px 0px;
-  border-radius: 5px;
-  margin: 2px 10px 10px 10px;
-  width: 100%;
-  text-align: center;
-  text-justify: auto;
-  font-weight: 700;
+.card {
+  padding: 10px 20px;
+  background-color: #eaf2f5;
+  border-radius: 10px;
 }
-#title {
-  border: 1px solid #b4b7b8;
-  background-color: rgb(85, 90, 95);
-  color: white;
+.card p {
+  text-align: justify;
+}
+
+#cardHeader {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #d7ddde;
+  border: solid gray;
+  border-radius: 10px;
+  margin-bottom: 5px;
 }
 
 #resultNumber {
