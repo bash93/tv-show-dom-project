@@ -4,16 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TV Show Project | Bashir (bash93)</title>
-    <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
   </head>
-
   <body>
-    <div id="root"></div>
-
-    <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
+    <header>
+      <div class="navbar bg-dark">
+        <div class="container d-flex">
+          <div class="navbar-brand d-flex">
+            <select class="select" name="episodesList" id="allEpisodes">
+              <option value="novalue">Show all episodes</option>
+            </select>
+          </div>
+          <span id="resultNumber"></span>
+          <input placeholder="Start typing to filter" type="text" id="search" />
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <div class="py-5 bg-light">
+        <div class="container">
+          <div id="root" class="row"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-muted">
+      <div class="container">
+        <p>
+          TV shows data has originally come from
+          <a href="http://www.tvmaze.com">TVMaze.com</a>
+        </p>
+      </div>
+    </footer>
     <script src="episodes.js"></script>
-
+    <script src="shows.js"></script>
     <!-- Loads YOUR javascript code -->
     <script src="script.js"></script>
   </body>
