@@ -36,8 +36,8 @@ header {
 #cardHeader {
   display: flex;
   justify-content: space-evenly;
-  background-color: #d7ddde;
-  border: solid gray;
+  background-color: #0c191b;
+  border: solid rgb(194, 45, 45);
   border-radius: 10px;
   margin-bottom: 5px;
 }
