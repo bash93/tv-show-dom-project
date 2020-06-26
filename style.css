@@ -1,10 +1,10 @@
 #root {
-  background-color: rgb(39, 34, 34);
+  background-color: rgb(212, 198, 198);
 }
 
 .navClass {
-  background-color: #f1f2f6;
-  color: #535c68;
+  background-color: #9aaae7;
+  color: #031022;
   display: flex;
   justify-content: space-around;
   z-index: 1;
@@ -26,7 +26,7 @@
   margin: 20px 10px 10px 10px;
   border-radius: 1px;
   font-size: 20px;
-  color: #535c68;
+  color: #2b5286;
 }
 
 .searchLabel {
@@ -34,17 +34,17 @@
   margin: 10px;
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   font-size: 1em;
-  color: #535c68;
+  color: #0f3970;
   border: solid;
 }
 
 .eachCard {
   margin-top: 30px;
   text-align: center;
-  background-color: rgb(54, 52, 52);
+  background-color: rgb(100, 12, 12);
   color: white;
   height: 450px;
-  box-shadow: 5px 5px 10px rgb(49, 48, 48);
+  box-shadow: 5px 5px 10px rgb(100, 5, 5);
 }
 
 .h1Class {
@@ -57,18 +57,18 @@ img {
 
 .cardClass {
   text-align: center;
-  background-color: rgb(54, 52, 52);
+  background-color: rgb(119, 96, 96);
   color: white;
   height: 450px;
-  box-shadow: 5px 5px 10px rgb(49, 48, 48);
+  box-shadow: 5px 5px 10px rgb(56, 3, 3);
 }
 
 .cardClass > h1 {
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   padding: 5px 10px;
-  color: rgb(12, 12, 12);
+  color: rgb(185, 184, 184);
   font-size: 1em;
-  background-color: tomato;
+  background-color: rgb(250, 219, 214);
 }
 
 p {
