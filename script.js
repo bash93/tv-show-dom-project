@@ -28,4 +28,41 @@ function setup() {
     }
   });
 }
-]
+// Episodes display function
+function makePageForEpisodes(episodeList) {
+  rootElem.innerHTML = ""; // Clearing the main container
+  for (let i = 0; i < episodeList.length; i++) {
+    // Variables to be used for each episode
+    let episodeContainer = document.createElement("div"),
+      episodeShadow = document.createElement("div"),
+      episodeBody = document.createElement("div"),
+      episodeTitle = document.createElement("div"),
+      episodeN = document.createElement("div"),
+      episodeNameCode = document.createElement("mediuem"),
+      episodeImg = document.createElement("img"),
+      episodeCode =
+        "S" +
+        episodeList[i].season.toString().padStart(2, "0") +
+        "E" +
+        episodeList[i].number.toString().padStart(2, "0");
+// Episode code and name function declaration
+function listEpisodes(episodes) {
+  for (let i = 0; i < episodes.length; i++) {
+    let episodeCode =
+      "S" +
+      episodes[i].season.toString().padStart(2, "0") +
+      "E" +
+      episodes[i].number.toString().padStart(2, "0");
+    let dropDownOption = document.createElement("option");
+    dropDownOption.value = episodes[i].id;
+    dropDownOption.innerText = `${episodeCode} - ${episodes[i].name}`;
+    selectEpisode.appendChild(dropDownOption);
+  }
+}
+function containsSearchTerm(episode) {
+  return (
+    episode.summary.toLowerCase().includes(searchBox.value.toLowerCase()) ||
+    episode.name.toLowerCase().includes(searchBox.value.toLowerCase())
+  );
+}
+window.onload = setup;
