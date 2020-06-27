@@ -45,6 +45,30 @@ function makePageForEpisodes(episodeList) {
         episodeList[i].season.toString().padStart(2, "0") +
         "E" +
         episodeList[i].number.toString().padStart(2, "0");
+    // adding classes to style the page.
+    episodeContainer.classList.add("col-md-4");
+    episodeShadow.classList.add("card", "mb-4", "shadow-sm");
+    episodeImg.classList.add("bd-placeholder-img", "card-img-top");
+    episodeBody.classList.add("card-body");
+    episodeTitle.classList.add(
+      "d-flex",
+      "justify-content-between",
+      "align-items-center"
+    );
+    episodeN.classList.add("btn-group", "name");
+    episodeNameCode.classList.add("text-muted");
+    episodeNameCode.id = "episodeNameCode";
+    episodeTitle.id = "title";
+    episodeTitle.append(episodeN, episodeNameCode);
+    episodeNameCode.innerText = episodeCode;
+    episodeN.innerText = episodeList[i].name;
+    episodeBody.innerHTML = episodeList[i].summary;
+    episodeImg.src = episodeList[i].image.medium;
+    episodeShadow.append(episodeTitle, episodeImg, episodeBody);
+    episodeContainer.append(episodeShadow);
+    rootElem.append(episodeContainer);
+  }
+}
 // Episode code and name function declaration
 function listEpisodes(episodes) {
   for (let i = 0; i < episodes.length; i++) {
