@@ -33,7 +33,11 @@
   padding: 10px;
   margin: 10px;
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+<<<<<<< HEAD
   font-size: 1em;
+=======
+  font-size: 2em;
+>>>>>>> parent of 0a95d02... Update style.css
   color: #0f3970;
   border: solid;
 }
