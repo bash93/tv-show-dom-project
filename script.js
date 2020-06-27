@@ -1,9 +1,9 @@
 //You can edit ALL of the code here
 //Variables
 const rootElem = document.getElementById("root");
-let searchBox = document.getElementById("search");
 const allEpisodes = getAllEpisodes();
 const selectEpisode = document.getElementById("allEpisodes");
+let searchBox = document.getElementById("search");
 function setup() {
   makePageForEpisodes(allEpisodes);
   listEpisodes(allEpisodes);
