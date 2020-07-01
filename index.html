@@ -17,25 +17,16 @@
     <header>
       <div class="navbar bg-dark">
         <div class="container d-flex">
-          <select class="select" name="showsList" id="allShows">
-            <option value="novalue">The show WE like!</option>
-          </select>
-
-          <select class="select" name="episodesList" id="allEpisodes">
-            <option value="novalue">List all episodes</option>
-          </select>
-          <div>
-            <input
-              placeholder="Start typing to filter"
-              type="text"
-              id="search"
-            />
-            <span id="resultNumber"></span>
+          <div class="navbar-brand d-flex">
+            <select class="select" name="episodesList" id="allEpisodes">
+              <option value="novalue">All episodes</option>
+            </select>
           </div>
+          <span id="resultNumber"></span>
+          <input placeholder="your search item" type="text" id="search" />
         </div>
       </div>
     </header>
-
     <main role="main">
       <div class="py-5 bg-light">
         <div class="container">
@@ -46,7 +37,7 @@
     <footer class="text-muted">
       <div class="container">
         <p>
-          TV show details and info are sourced from
+          TV shows data has originally come from
           <a href="http://www.tvmaze.com">TVMaze.com</a>
         </p>
       </div>
