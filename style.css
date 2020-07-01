@@ -1,77 +1,115 @@
-#root {
-  background-color: rgb(212, 198, 198);
+#search {
+  width: 18rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+  margin: 0.5rem 0rem 0.5rem 0rem;
 }
-
-.navClass {
-  background-color: #9aaae7;
-  color: #031022;
-  display: flex;
-  justify-content: space-around;
-  z-index: 1;
-  top: 0px;
-}
-
 .select {
-  height: 40px;
-  padding: 10px;
-  margin: 20px 10px 10px 10px;
-  border-radius: 1px;
-  font-size: 10px;
-  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  width: 18rem;
+  font-size: 1rem;
+  margin: 0.5rem 0.5rem 0.5rem 0rem;
 }
-
-.inputClass {
-  height: 27px;
-  padding: 5px;
-  margin: 20px 10px 10px 10px;
-  border-radius: 1px;
-  font-size: 20px;
-  color: #2b5286;
-}
-
-.searchLabel {
-  padding: 10px;
-  margin: 10px;
-  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-  font-size: 1em;
-  color: #0f3970;
-  border: solid;
-}
-
-.eachCard {
-  margin-top: 30px;
-  text-align: center;
-  background-color: rgb(100, 12, 12);
-  color: white;
-  height: 450px;
-  box-shadow: 5px 5px 10px rgb(100, 5, 5);
-}
-
-.h1Class {
-  font-size: 17px;
-}
-
-img {
+.name {
+  padding: 15px 0px 15px 0px;
+  border-radius: 5px;
+  margin: 2px 10px 10px 10px;
   width: 100%;
-}
-
-.cardClass {
   text-align: center;
-  background-color: rgb(119, 96, 96);
+  text-justify: auto;
+  font-weight: 700;
+}
+#title {
+  border: 1px solid #b4b7b8;
+  background-color: rgb(85, 90, 95);
   color: white;
-  height: 450px;
-  box-shadow: 5px 5px 10px rgb(56, 3, 3);
+  border-radius: 5px 5px 0px 0px;
 }
 
-.cardClass > h1 {
-  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-  padding: 5px 10px;
-  color: rgb(12, 12, 12);
-  font-size: 1em;
-  background-color: tomato;
+#resultNumber {
+  color: white;
 }
 
-p {
-  text-align: justify;
-  padding: 5px;
+.episodeNameCode {
+  color: white;
+  margin-right: 10px;
+  font-weight: 700;
+}
+.card {
+  height: 100%;
+}
+.card-body {
+  padding: 1.25rem 1.25rem 0rem 1.25rem;
+}
+.col-md-4 {
+  padding-bottom: 15px;
+}
+.name {
+  text-align: left;
+  margin-bottom: 2px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+.episodefooter {
+  padding: 1.25rem 1.25rem 0.75rem 1.25rem;
+}
+a {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+small {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+@media (min-width: 576px) {
+  .name {
+    text-align: left;
+    margin-bottom: 2px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 768px) {
+  .name {
+    text-align: left;
+    margin-bottom: 2px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 992px) {
+  .name {
+    text-align: left;
+    margin-bottom: 2px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 1200px) {
+  .name {
+    text-align: left;
+    margin-bottom: 2px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }
 }
