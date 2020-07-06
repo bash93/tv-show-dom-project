@@ -1,19 +1,20 @@
 //You can edit ALL of the code here
 //Variables
 const rootElem = document.getElementById("root");
+let searchBox = document.getElementById("search");
 const allEpisodes = getAllEpisodes();
 const selectEpisode = document.getElementById("allEpisodes");
-let searchBox = document.getElementById("search");
+console.log(selectEpisode);
 function setup() {
   makePageForEpisodes(allEpisodes);
   listEpisodes(allEpisodes);
   // Item search function by using an event Listener
   searchBox.addEventListener("input", () => {
-    let resultNumber = document.getElementById("resultNumber");
-    let results = allEpisodes.filter(containsSearchTerm);
+    const resultNumber = document.getElementById("resultNumber");
+    const results = allEpisodes.filter(containsSearchTerm);
     makePageForEpisodes(results);
     resultNumber.innerText = `${results.length} / ${allEpisodes.length}`;
-    if (searchBox.value.length == 0) {
+    if (searchBox.value.length === 0) {
       resultNumber.innerText = "";
     }
   });
@@ -21,10 +22,10 @@ function setup() {
     if (selectEpisode.value === "novalue") {
       makePageForEpisodes(allEpisodes);
     } else {
-      let result = allEpisodes.find((episode) => {
-        return episode.id == selectEpisode.value;
+      const result = allEpisodes.find((episode) => {
+        return episode.id === Number(selectEpisode.value);
       });
-      makePageForEpisodes(result);
+      makePageForEpisodes([result]);
     }
   });
 }
@@ -69,6 +70,7 @@ function makePageForEpisodes(episodeList) {
     rootElem.append(episodeContainer);
   }
 }
+//DropDown selecter
 // Episode code and name function declaration
 function listEpisodes(episodes) {
   for (let i = 0; i < episodes.length; i++) {
