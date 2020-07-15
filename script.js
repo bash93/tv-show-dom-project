@@ -1,8 +1,9 @@
 //You can edit ALL of the code here
 //Variables
 const rootElem = document.getElementById("root");
+// const episodesContainer = document.getElementById("CardContainer");
 let searchBox = document.getElementById("search");
-const allEpisodes = getAllEpisodes();
+const allEpisodes = getAllEpisodes().then((response) => response.json());
 const selectEpisode = document.getElementById("allEpisodes");
 console.log(selectEpisode);
 function setup() {
@@ -39,7 +40,7 @@ function makePageForEpisodes(episodeList) {
       episodeBody = document.createElement("div"),
       episodeTitle = document.createElement("div"),
       episodeN = document.createElement("div"),
-      episodeNameCode = document.createElement("mediuem"),
+      episodeNameCode = document.createElement("medium"),
       episodeImg = document.createElement("img"),
       episodeCode =
         "S" +
@@ -71,7 +72,7 @@ function makePageForEpisodes(episodeList) {
   }
 }
 //DropDown selecter
-// Episode code and name function declaration
+//Episode code and name function declaration
 function listEpisodes(episodes) {
   for (let i = 0; i < episodes.length; i++) {
     let episodeCode =
